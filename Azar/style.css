@@ -1,7 +1,27 @@
+body {
+    background: url(fondo.jpeg);
+    color: #4f3868;
+}
+
+#wrap {
+    background: white;
+    border-radius: 50px;
+    border: 20px solid #865cb2;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
 h1,
 form,
 input[type=number] {
     text-align: center;
+}
+
+h1,
+h2 {
+    margin: auto;
 }
 
 input[type=number] {
@@ -19,9 +39,17 @@ td {
     padding: 5px;
 }
 
+th {
+    background: #cbc0d6;
+}
+
+td {
+    background: #e2dce8;
+}
+
 table,
 td,
 th {
-    border: 1px solid #000;
+    border: 2px solid #4f3868;
 }
 

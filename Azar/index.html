@@ -1,21 +1,34 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Lanzamiento de dados</title>
-    <script src="script2.js"></script>
-    <link rel="stylesheet" href="style.css"></style>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Lanzamiento de dados</h1>
-    <form>
-        Caras: <input type="number" min="1" value="1" id="inp1" /> Veces: <input type="number" min="1" value="1" id="inp2" />
-        <button type="button" onclick="result.innerHTML = dado(inp1.value, inp2.value)">Que el azar decida</button>
+    <div id="wrap">
+        <h1>Lanzamiento de dados</h1>
+        <br/>
+        <form>
+            Caras: <input type="number" min="1" value="1" id="inp1" /> Veces: <input type="number" min="1" value="1" id="inp2" />
+            <button type="button" onclick="result.innerHTML = dado(inp1.value, inp2.value)">Que el azar decida</button>
 
-        <br /><br />Resultados:
-        <br /><div id="result"><table><tr><th>Nº Tirada</th><th>Resultado</th></tr></table></div>
-    </form>
+            <br /><br />
+            <h2>Resultados:</h2>
+            <br />
+            <div id="result">
+                <table>
+                    <tr>
+                        <th>Nº Tirada</th>
+                        <th>Resultado</th>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
