@@ -1,0 +1,10 @@
+h1,
+form {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 200px;
+}
