@@ -5,7 +5,7 @@ function dado(caras = 0, veces = 1) {
         if (veces == 1) {
             return Math.ceil(Math.random() * caras);
         } else {
-            var arr;
+            let arr = [];
             for (let i = 0; i < veces; i++) {
                 arr[i] = Math.ceil(Math.random() * caras);
             }
