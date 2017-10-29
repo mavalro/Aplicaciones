@@ -53,3 +53,19 @@ th {
     border: 2px solid #4f3868;
 }
 
+#mavalro {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background: #4f3868;
+    height: auto;
+}
+
+#mavalro a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
