@@ -1,12 +1,25 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Code Minifier</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../Estilos/style.css">
 </head>
+
 <body>
 
-
+    <div id="wrap">
+        <h1>Code Minifier</h1>
+        <h2>Introduce el código:</h2>
+        <textarea id="input"></textarea><br/>
+        <button type="button" onclick="minify()">Minify</button><br/>
+        <hr/>
+        <h2>Resultado:</h2>
+        <textarea id="output" readonly></textarea>
+    </div>
 
 </body>
+
 </html>
