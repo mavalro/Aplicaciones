@@ -11,6 +11,7 @@ body {
     width: 80%;
     margin: auto;
     max-width: 800px;
+    text-align: center;
 }
 
 h1,
@@ -24,10 +25,17 @@ h2 {
     margin: auto;
 }
 
+/* Elementos de formulario */
 input[type=number] {
     width: 40px;
 }
+textarea {
+    resize: none;
+    height: 200px;
+    width: 80%;
+}
 
+/* Estilo de Tabla */
 table {
     text-align:center;
     margin: auto;
