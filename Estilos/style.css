@@ -27,7 +27,7 @@ h2 {
 
 /* Elementos de formulario */
 input[type=number] {
-    width: 40px;
+    width: 80px;
 }
 textarea {
     resize: none;
@@ -62,7 +62,7 @@ th {
 }
 
 #mavalro {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
