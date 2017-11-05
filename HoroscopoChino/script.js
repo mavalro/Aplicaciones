@@ -1,18 +1,18 @@
-var signos = ['Mono', 'Gallo', 'Perro', 'Jabalí', 'Rata', 'Buey', 'Tigre', 'Conejo', 'Dragón', 'Serpiente', 'Caballo', 'Cabra'];
+let signos = ['Mono', 'Gallo', 'Perro', 'Jabalí', 'Rata', 'Buey', 'Tigre', 'Conejo', 'Dragón', 'Serpiente', 'Caballo', 'Cabra'];
 
-var elementos = ['metal', 'metal', 'agua', 'agua', 'madera', 'madera', 'fuego', 'fuego', 'tierra', 'tierra'];
+let elementos = ['metal', 'metal', 'agua', 'agua', 'madera', 'madera', 'fuego', 'fuego', 'tierra', 'tierra'];
 
 function calcular(anyo)
 {
-    var signo, elemento;
+    let signo, elemento ='';
     if ( !/^[0-9]{1,5}$/.test(anyo) ) {
         signo = 'Año no válido, introduce uno diferente.'
     } else {
         signo = calcular2(signos,reducir(anyo));
-        elemento = calcular2(elementos,reducir2(anyo));
+        elemento = ` de ${calcular2(elementos,reducir2(anyo))}`;
     }
 
-    resultado.innerHTML = `${signo} de ${elemento}`;
+    resultado.innerHTML = signo+elemento;
 }
 
 function reducir(anyo) {
