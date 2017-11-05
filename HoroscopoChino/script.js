@@ -1,70 +1,70 @@
-function calcular()
-{
-    var año = document.zodiacoChino.año.value;
+var caballo = 1, perro = 2;      // Perro
+var jabali = 3;      // Jabalí
+var z4 = 4;      // Rata
+var z5 = 5;      // Buey
+var z6 = 6;      // Tigre
+var z7 = 7;      // Conejo / Gato
+var z8 = 8;      // Dragón
+var z9 = 9;      // Serpiente
+var z10 = 10;    // Caballo
+var z11 = 11;    // Cabra
+var z12 = 12;    // Mono
 
-    var z1 = 1;      // Gallo
-    var z2 = 2;      // Perro
-    var z3 = 3;      // Jabalí
-    var z4 = 4;      // Rata
-    var z5 = 5;      // Buey
-    var z6 = 6;      // Tigre
-    var z7 = 7;      // Conejo / Gato
-    var z8 = 8;      // Dragón
-    var z9 = 9;      // Serpiente
-    var z10 = 10;    // Caballo
-    var z11 = 11;    // Cabra
-    var z12 = 12;    // Mono
+
+function calcular(anyo)
+{
+
 
     var signo;
-    if ( año - 0 <= 0 || año - 0 > 999999 ) {
-        signo = "Año no válido, introduce uno diferente."
+    if ( /^[0-9]+$/.test(anyo) ) {
+        signo = 'Año no válido, introduce uno diferente.'
     } else {
-        while ( año != z1 && año != z2 && año != z3 && año != z4 && año != z5 && año != z6 && año != z7 && año != z8 && año != z9 && año != z10 && año != z11 && año != z12 )
+        while ( anyo > 12 )
         {
-            año -= 12;
+            anyo -= 12;
         }
     }
-    switch ( año - 0 )
+    switch ( anyo - 0 )
     {
         case 1:
-            signo = "Gallo";
+            signo = 'Gallo';
             break;
         case 2:
-            signo = "Perro";
+            signo = 'Perro';
             break;
         case 3:
-            signo = "Jabalí";
+            signo = 'Jabalí';
             break;
         case 4:
-            signo = "Rata";
+            signo = 'Rata';
             break;
         case 5:
-            signo = "Buey";
+            signo = 'Buey';
             break;
         case 6:
-            signo = "Tigre";
+            signo = 'Tigre';
             break;
         case 7:
-            signo = "Conejo";
+            signo = 'Conejo';
             break;
         case 8:
-            signo = "Dragón";
+            signo = 'Dragón';
             break;
         case 9:
-            signo = "Serpiente";
+            signo = 'Serpiente';
             break;
         case 10:
-            signo = "Caballo";
+            signo = 'Caballo';
             break;
         case 11:
-            signo = "Cabra";
+            signo = 'Cabra';
             break;
         case 12:
-            signo = "Mono";
+            signo = 'Mono';
             break;
         default:
-            signo = "Año no válido, introduce uno diferente.";
+            signo = 'Año no válido, introduce uno diferente.';
             break;
     }
-    document.getElementById("demo").innerHTML = signo;
+    resultado.innerHTML = signo;
 }
