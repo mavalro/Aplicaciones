@@ -1,3 +1,3 @@
 function calcular(porcentaje, numero) {
-    total.value = (numero * (porcentaje / 100));
+    return (numero * (porcentaje / 100));
 }
