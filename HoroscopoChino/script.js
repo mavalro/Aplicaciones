@@ -5,7 +5,7 @@ let elementos = ['metal', 'metal', 'agua', 'agua', 'madera', 'madera', 'fuego', 
 function calcular(anyo)
 {
     let signo, elemento ='';
-    if ( !/^[0-9]{1,5}$/.test(anyo) ) {
+    if ( !/^[1-9]{1}[0-9]{1,4}$/.test(anyo) ) {
         signo = 'Año no válido, introduce uno diferente.'
     } else {
         signo = calcular2(signos,reducir(anyo));
