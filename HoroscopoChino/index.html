@@ -4,17 +4,19 @@
         <meta charset="utf-8">
         <title></title>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="../Estilos/style.css"/>
     </head>
     <body>
-        <form>
-    		<center>
-    			Introduce el año de nacimiento:<br>
-    			<input type="number" min="1" id="anyo"/><br>
+        <div id="wrap">
+            <h1>Signo del Zodíaco Chino</h1>
+            <form>
+    			<br/>Introduce el año de nacimiento:<br/><br/>
+    			<input type="number" min="1" id="anyo"/>
     			<button type="button" onclick="calcular(anyo.value)">Calcular</button>
-    			<br>
-    			Tu signo del horóscopo chino es: <br>
+    			<br/><br/>
+    			Tu signo del horóscopo chino es: <br/>
     			<p id="resultado">...</p>
-    		</center>
-    	</form>
+    	    </form>
+        </div>
     </body>
 </html>
